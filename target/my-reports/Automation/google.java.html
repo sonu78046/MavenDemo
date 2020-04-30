@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>google.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Maven_demo</a> &gt; <a href="index.source.html" class="el_package">Automation</a> &gt; <span class="el_source">google.java</span></div><h1>google.java</h1><pre class="source lang-java linenums">package Automation;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
+
+<span class="fc" id="L11">public class google {</span>
+	public WebDriver driver;
+	public void launchurl() {
+<span class="fc" id="L14">		Properties prop=new Properties();</span>
+		try {
+<span class="fc" id="L16">			FileInputStream ip= new FileInputStream(&quot;./config.properties&quot;);</span>
+<span class="fc" id="L17">			prop.load(ip);</span>
+<span class="fc" id="L18">			String path=prop.getProperty(&quot;chromeDriverPath&quot;);</span>
+<span class="fc" id="L19">			String Url=prop.getProperty(&quot;url&quot;);</span>
+<span class="fc" id="L20">			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,&quot;true&quot;);</span>
+<span class="fc" id="L21">			System.setProperty(&quot;webdriver.chrome.driver&quot;,path);</span>
+<span class="fc" id="L22">			driver = new ChromeDriver();</span>
+<span class="fc" id="L23">			driver.manage().window().maximize();</span>
+<span class="fc" id="L24">			driver.navigate().to(Url);</span>
+<span class="fc" id="L25">		} </span>
+<span class="nc" id="L26">		catch (Exception e) {</span>
+			// TODO Auto-generated catch block
+<span class="nc" id="L28">			e.printStackTrace();</span>
+		}
+<span class="fc" id="L30">	}</span>
+	public String verifyTitle(){
+<span class="fc" id="L32">		return driver.getTitle();</span>
+  }
+  public String verifygmailtext() {
+<span class="fc" id="L35">	  String text=driver.findElement(By.xpath(&quot;//a[contains(text(),'Gmail')]&quot;)).getText();</span>
+<span class="fc" id="L36">	  return text;</span>
+	  
+  }
+  public void closeBrowser() {
+<span class="fc" id="L40">	  driver.close();</span>
+<span class="fc" id="L41">  }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
