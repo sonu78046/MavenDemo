@@ -17,23 +17,25 @@ public class google {
 			FileInputStream ip= new FileInputStream(config);
 			prop.load(ip);
 			String path=prop.getProperty("chromeDriverPath");
+			System.out.println(path);
+			System.out.println(config);
 			String Url=prop.getProperty("url");
 			System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY,"true");
-			System.setProperty("webdriver.chrome.driver","chromeDriverPath");
+			System.setProperty("webdriver.chrome.driver",path);
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.navigate().to(Url);
 		} 
 		catch(Exception e)
 		{
-			
+			System.out.println(e);
 		}
 	}
 	
-		
-	public String verifyTitle(){
+		public String verifyTitle(){
 		return driver.getTitle();
   }
+		
   public String verifygmailtext() {
 	  String text=driver.findElement(By.xpath("//a[contains(text(),'Gmail')]")).getText();
 	  return text;

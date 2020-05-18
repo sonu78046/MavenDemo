@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="303" started-at="2020-05-13T07:48:02 IST" finished-at="2020-05-13T07:48:02 IST">
+  <suite name="Default suite" duration-ms="46796" started-at="2020-05-18T15:38:32 IST" finished-at="2020-05-18T15:39:19 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="303" started-at="2020-05-13T07:48:02 IST" finished-at="2020-05-13T07:48:02 IST">
-      <class name="Automation.Utf_Test">
-        <test-method status="PASS" signature="removeascii()[pri:0, instance:Automation.Utf_Test@61f8bee4]" name="removeascii" duration-ms="37" started-at="2020-05-13T07:48:02 IST" finished-at="2020-05-13T07:48:02 IST">
+    <test name="Default test" duration-ms="46796" started-at="2020-05-18T15:38:32 IST" finished-at="2020-05-18T15:39:19 IST">
+      <class name="Automation.NewTest">
+        <test-method status="PASS" signature="chrome()[pri:0, instance:Automation.NewTest@551aa95a]" name="chrome" is-config="true" duration-ms="45613" started-at="2020-05-18T15:38:32 IST" finished-at="2020-05-18T15:39:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- removeascii -->
-      </class> <!-- Automation.Utf_Test -->
+        </test-method> <!-- chrome -->
+        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:Automation.NewTest@551aa95a]" name="verifyTitle" duration-ms="55" started-at="2020-05-18T15:39:18 IST" finished-at="2020-05-18T15:39:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method status="PASS" signature="verifygmailtext()[pri:0, instance:Automation.NewTest@551aa95a]" name="verifygmailtext" duration-ms="192" started-at="2020-05-18T15:39:18 IST" finished-at="2020-05-18T15:39:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifygmailtext -->
+        <test-method status="PASS" signature="quite()[pri:0, instance:Automation.NewTest@551aa95a]" name="quite" is-config="true" duration-ms="860" started-at="2020-05-18T15:39:18 IST" finished-at="2020-05-18T15:39:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+      </class> <!-- Automation.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

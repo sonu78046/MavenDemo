@@ -19,11 +19,6 @@ public class NewTest {
   get.launchurl("./config.properties");
   }
 
-	
-	  @Test(expectedExceptions= {Exception.class}) 
-	  public void getexception() throws IOException {
-	  get.launchurl("./config.properties"); 
-	  }
 	 
   @Test
   public void verifyTitle() {
