@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46796" started-at="2020-05-18T15:38:32 IST" finished-at="2020-05-18T15:39:19 IST">
+  <suite started-at="2020-08-07T17:37:05 IST" name="Suite" finished-at="2020-08-07T17:37:34 IST" duration-ms="28403">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46796" started-at="2020-05-18T15:38:32 IST" finished-at="2020-05-18T15:39:19 IST">
+    <test started-at="2020-08-07T17:37:05 IST" name="Test" finished-at="2020-08-07T17:37:34 IST" duration-ms="28403">
       <class name="Automation.NewTest">
-        <test-method status="PASS" signature="chrome()[pri:0, instance:Automation.NewTest@551aa95a]" name="chrome" is-config="true" duration-ms="45613" started-at="2020-05-18T15:38:32 IST" finished-at="2020-05-18T15:39:18 IST">
+        <test-method is-config="true" signature="chrome()[pri:0, instance:Automation.NewTest@2805c96b]" started-at="2020-08-07T17:37:05 IST" name="chrome" finished-at="2020-08-07T17:37:33 IST" duration-ms="27508" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chrome -->
-        <test-method status="PASS" signature="verifyTitle()[pri:0, instance:Automation.NewTest@551aa95a]" name="verifyTitle" duration-ms="55" started-at="2020-05-18T15:39:18 IST" finished-at="2020-05-18T15:39:18 IST">
+        <test-method signature="verifyTitle()[pri:0, instance:Automation.NewTest@2805c96b]" started-at="2020-08-07T17:37:33 IST" name="verifyTitle" finished-at="2020-08-07T17:37:33 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method status="PASS" signature="verifygmailtext()[pri:0, instance:Automation.NewTest@551aa95a]" name="verifygmailtext" duration-ms="192" started-at="2020-05-18T15:39:18 IST" finished-at="2020-05-18T15:39:18 IST">
+        <test-method signature="verifygmailtext()[pri:0, instance:Automation.NewTest@2805c96b]" started-at="2020-08-07T17:37:33 IST" name="verifygmailtext" finished-at="2020-08-07T17:37:33 IST" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifygmailtext -->
-        <test-method status="PASS" signature="quite()[pri:0, instance:Automation.NewTest@551aa95a]" name="quite" is-config="true" duration-ms="860" started-at="2020-05-18T15:39:18 IST" finished-at="2020-05-18T15:39:19 IST">
+        <test-method is-config="true" signature="quite()[pri:0, instance:Automation.NewTest@2805c96b]" started-at="2020-08-07T17:37:33 IST" name="quite" finished-at="2020-08-07T17:37:34 IST" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->
       </class> <!-- Automation.NewTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
