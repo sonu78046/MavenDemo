@@ -8,7 +8,6 @@
           <include name="verifygmailtext"/>
           <include name="quite"/>
           <include name="verifyTitle"/>
-          <include name="getexception"/>
           <include name="chrome"/>
         </methods>
       </class> <!-- Automation.NewTest -->
